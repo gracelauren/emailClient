@@ -13,17 +13,22 @@
   <script src="store.js"></script>
   <script src="router.js"></script>
 
-  <script src="controllers/.js"></script>
+  <script src="controllers/folder.js"></script>
+  <script src="controllers/new-email.js"></script>
+  <script src="controllers/new-folder.js"></script>
+  <script src="controllers/show-email.js"></script>
 
   <script src="routes/home.js"></script>
-  <script src="routes/email.js"></script>
+  <script src="routes/folder.js"></script>
+  <script src="routes/show-email.js"></script>
   <script src="routes/new-email.js"></script>
 
+  <script src="models/folder.js"></script>
   <script src="models/email.js"></script>
 
 
   <script>
-  EmberHandlebarsLoader.loadTemplates(['application', 'home', 'newemail']);
+  EmberHandlebarsLoader.loadTemplates(['application', 'home', 'folder', 'show-email', 'new-folder']);
   </script>
   <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">

@@ -5,12 +5,3 @@ body {
 ul{
   list-style: none;
 }
-
-img{
-  height: 250px;
-  width: 250px;
-}
-
-.imageRow {
-  margin-right: 100px;
-}

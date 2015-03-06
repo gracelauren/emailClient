@@ -1,0 +1,11 @@
+{{#if isDeleted}}
+
+{{else}}
+
+<h2>To: {{recipient}}</h2>
+<h2>From: {{sender}}</h2>
+<h3>Subject: {{subject}}</h3>
+<h4>Date: {{date}}</h4>
+<h4>{{body}}</h4>
+<button class="btn btn-primary" {{action 'delete' product}}>Delete</button>
+{{/if}}
