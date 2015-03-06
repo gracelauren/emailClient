@@ -10,7 +10,6 @@ EmailClient.FolderController = Ember.ObjectController.extend({
         recipient: this.get('recipient'),
         subject: this.get('subject'),
         body: this.get('body'),
-        sender: this.get('sender'),
       });
       folder.get('emails').then(function(emails) {
         emails.pushObject(email);
@@ -20,7 +19,7 @@ EmailClient.FolderController = Ember.ObjectController.extend({
       this.set('isAdding', false)
     },
     delete: function() {
-      if (confirm('Are you sure?')) {
+      if (confirm('Are you sure? All of your e-mails in this folder will be destroyed!')) {
       this.get('model').destroyRecord();
       this.transitionToRoute('home');
       }

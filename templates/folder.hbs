@@ -29,7 +29,7 @@
     <button class="btn btn-primary" {{action "save"}}>Send E-mail</button>
   </form>
 {{else}}
-  <button class="btn btn-primary" {{action "add"}}>Compose</button>
-  <button class="btn btn-warning" {{action 'delete'}}>Delete</button>
+  <button class="btn btn-primary" {{action "add"}}>Compose {{name}} E-mail</button>
+  <button class="btn btn-warning" {{action 'delete'}}>Delete {{name}}</button>
 {{/if}}
 </div>
