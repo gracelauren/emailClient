@@ -22,7 +22,7 @@ EmailClient.FolderController = Ember.ObjectController.extend({
     delete: function() {
       if (confirm('Are you sure?')) {
       this.get('model').destroyRecord();
-      this.transitionToRoute('folders');
+      this.transitionToRoute('home');
       }
     }
   }

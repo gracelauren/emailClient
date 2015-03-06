@@ -14,4 +14,3 @@ EmailClient.ShowEmailController = Ember.ObjectController.extend({
     }
   }
 });
-xs
