@@ -2,9 +2,9 @@
 
 <ul>
   {{#each}}
-  <li>{{#link-to 'folder' this.id}}{{name}}{{/link-to}}</li>
+  <li><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span>  {{#link-to 'folder' this.id}}{{name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
 
-<p>{{#link-to 'new-folder' classNames="btn btn-primary"}}New Folder{{/link-to}}</p>
+<p>{{#link-to 'new-folder' classNames="btn btn-primary"}}<span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> New Folder{{/link-to}}</p>

@@ -26,10 +26,10 @@
       {{input value=subject id="subject" classNames="form-control" placeholder="Subject"}}
       {{textarea rows=5 value=body id="body" classNames="form-control" placeholder="Body"}}
     </div>
-    <button class="btn btn-primary" {{action "save"}}>Send E-mail</button>
+    <button class="btn btn-primary" {{action "save"}}>Send E-mail <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></button>
   </form>
 {{else}}
-  <button class="btn btn-primary" {{action "add"}}>Compose {{name}} E-mail</button>
-  <button class="btn btn-warning" {{action 'delete'}}>Delete {{name}}</button>
+  <button class="btn btn-primary" {{action "add"}}>Compose {{name}} E-mail <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+  <button class="btn btn-warning" {{action 'delete'}}>Delete {{name}} <span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 {{/if}}
 </div>
